@@ -1,0 +1,47 @@
+{
+  "name": "liteerp",
+  "version": "0.1.0",
+  "description": "Framework-neutral frontend theme for ERP applications",
+  "license": "MIT",
+  "author": "LiteERP contributors",
+  "homepage": "https://ihamarneh.github.io/LiteERP/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ihamarneh/LiteERP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ihamarneh/LiteERP/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:network": "node scripts/dev.mjs --network",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/dev.mjs"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "style": "dist/liteerp.css",
+  "module": "dist/liteerp.js",
+  "exports": {
+    ".": {
+      "import": "./dist/liteerp.js"
+    },
+    "./css": "./dist/liteerp.css"
+  },
+  "keywords": [
+    "erp",
+    "dashboard",
+    "admin-theme",
+    "responsive",
+    "framework-neutral"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
